@@ -23,7 +23,9 @@ soma_lista(lista_cpf)
 
 soma_lista(lista_cpf)
 
-if list(cpf) == lista_cpf:
+sequencia = lista_cpf == list(lista_cpf[0] * len(lista_cpf))
+
+if list(cpf) == lista_cpf and not sequencia:
     print("CPF Valido")
 else:
     print("CPF Inválido")
